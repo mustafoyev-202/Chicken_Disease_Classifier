@@ -81,3 +81,332 @@ Source-Age: 0
 [2024-09-15 20:10:35,350: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2024-09-15 20:39:53,178: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 20:39:53,182: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 20:39:53,185: INFO: common: created directory at: artifacts]
+[2024-09-15 20:39:53,188: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-15 20:40:04,840: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-15 20:40:05,045: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-15 21:00:38,259: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-15 21:00:38,261: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:00:38,263: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:00:38,263: INFO: common: created directory at: artifacts]
+[2024-09-15 21:00:38,264: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-15 21:00:38,264: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2024-09-15 21:00:38,439: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-15 21:00:38,439: INFO: main: *******************]
+[2024-09-15 21:00:38,439: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-15 21:00:38,439: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:00:38,445: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:00:38,445: INFO: common: created directory at: artifacts]
+[2024-09-15 21:00:38,445: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-15 21:00:38,814: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-15 21:00:38,977: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-15 21:00:39,077: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-15 21:07:32,473: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:07:32,478: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:07:32,479: INFO: common: created directory at: artifacts]
+[2024-09-15 21:07:32,482: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:07:32,484: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:13:11,666: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-15 21:13:11,669: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:13:11,670: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:13:11,671: INFO: common: created directory at: artifacts]
+[2024-09-15 21:13:11,671: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-15 21:13:23,390: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: A920:309BD4:2BD135B:2DDC52E:66E6F8D1
+Accept-Ranges: bytes
+Date: Sun, 15 Sep 2024 16:13:14 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-eddf8230022-FRA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1726416794.254020,VS0,VE133
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 4c827d61439a10c018def1fc682b4e9996a76c4c
+Expires: Sun, 15 Sep 2024 16:18:14 GMT
+Source-Age: 0
+
+]
+[2024-09-15 21:13:23,597: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-15 21:13:23,597: INFO: main: *******************]
+[2024-09-15 21:13:23,597: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-15 21:13:23,599: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:13:23,602: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:13:23,602: INFO: common: created directory at: artifacts]
+[2024-09-15 21:13:23,604: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-15 21:13:24,005: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-15 21:13:24,148: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-09-15 21:13:24,341: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-15 21:13:46,834: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:13:46,836: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:13:46,839: INFO: common: created directory at: artifacts]
+[2024-09-15 21:13:46,841: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:13:46,842: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:18:28,026: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:18:28,030: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:18:28,032: INFO: common: created directory at: artifacts]
+[2024-09-15 21:18:28,033: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:18:28,035: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:19:07,364: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:19:07,366: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:19:07,368: INFO: common: created directory at: artifacts]
+[2024-09-15 21:19:07,369: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:19:07,371: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:22:34,295: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 21:22:35,403: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:22:35,407: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:22:35,408: INFO: common: created directory at: artifacts]
+[2024-09-15 21:22:35,411: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:22:35,412: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:23:52,464: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:23:52,467: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:23:52,468: INFO: common: created directory at: artifacts]
+[2024-09-15 21:23:52,470: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:23:52,472: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:27:35,102: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 21:27:36,613: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:27:36,624: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:27:36,627: INFO: common: created directory at: artifacts]
+[2024-09-15 21:27:36,629: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:27:36,631: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:29:13,917: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 21:29:14,991: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:29:14,994: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:29:14,995: INFO: common: created directory at: artifacts]
+[2024-09-15 21:29:14,997: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:29:14,998: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:33:13,481: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 21:33:14,671: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:33:14,675: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:33:14,677: INFO: common: created directory at: artifacts]
+[2024-09-15 21:33:14,678: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:33:14,679: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:36:44,407: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 21:36:45,452: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:36:45,455: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:36:45,457: INFO: common: created directory at: artifacts]
+[2024-09-15 21:36:45,458: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:36:45,459: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:45:37,428: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 21:49:04,038: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:49:04,047: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:49:04,054: INFO: common: created directory at: artifacts]
+[2024-09-15 21:49:04,058: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:49:04,062: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:49:04,100: INFO: common: created directory at: artifacts\training]
+[2024-09-15 21:50:16,269: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:50:16,273: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:50:16,274: INFO: common: created directory at: artifacts]
+[2024-09-15 21:50:16,277: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:50:16,278: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:50:16,280: INFO: common: created directory at: artifacts\training]
+[2024-09-15 21:58:34,528: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 21:58:35,930: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 21:58:35,935: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 21:58:35,937: INFO: common: created directory at: artifacts]
+[2024-09-15 21:58:35,938: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 21:58:35,940: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 21:58:35,943: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:00:32,013: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:00:32,017: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:00:32,019: INFO: common: created directory at: artifacts]
+[2024-09-15 22:00:32,021: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:00:32,023: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:00:32,024: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:00:47,032: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 22:00:48,453: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:00:48,456: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:00:48,458: INFO: common: created directory at: artifacts]
+[2024-09-15 22:00:48,459: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:00:48,460: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:00:48,463: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:09:07,430: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 22:09:08,802: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:09:08,806: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:09:08,808: INFO: common: created directory at: artifacts]
+[2024-09-15 22:09:08,810: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:09:08,811: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:09:08,815: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:12:00,409: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 22:12:01,612: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:12:01,616: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:12:01,618: INFO: common: created directory at: artifacts]
+[2024-09-15 22:12:01,620: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:12:01,622: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:12:01,625: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:13:09,112: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 22:13:10,245: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:13:10,248: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:13:10,250: INFO: common: created directory at: artifacts]
+[2024-09-15 22:13:10,252: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:13:10,253: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:13:10,256: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:15:24,035: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 22:15:25,093: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:15:25,096: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:15:25,097: INFO: common: created directory at: artifacts]
+[2024-09-15 22:15:25,099: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:15:25,101: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:15:25,103: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:23:31,902: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 22:23:33,022: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:23:33,026: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:23:33,029: INFO: common: created directory at: artifacts]
+[2024-09-15 22:23:33,031: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:23:33,033: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:23:33,036: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:23:59,112: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 22:24:00,213: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:24:00,216: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:24:00,218: INFO: common: created directory at: artifacts]
+[2024-09-15 22:24:00,220: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:24:00,221: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:24:00,225: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:25:31,497: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 22:26:53,953: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:26:53,956: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:26:53,958: INFO: common: created directory at: artifacts]
+[2024-09-15 22:26:53,960: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:26:53,962: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:28:26,374: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:28:26,378: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:28:26,380: INFO: common: created directory at: artifacts]
+[2024-09-15 22:28:26,381: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:28:26,383: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:28:26,384: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:29:16,179: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 22:29:17,523: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:29:17,527: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:29:17,529: INFO: common: created directory at: artifacts]
+[2024-09-15 22:29:17,530: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:29:17,532: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:29:17,535: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:46:28,654: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 22:46:29,724: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-15 22:46:29,727: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:46:29,729: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:46:29,730: INFO: common: created directory at: artifacts]
+[2024-09-15 22:46:29,730: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-15 22:46:42,750: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: CCA1:0DCF:83650D:89DDC6:66E71D77
+Accept-Ranges: bytes
+Date: Sun, 15 Sep 2024 17:46:32 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-eddf8230141-FRA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1726422392.276881,VS0,VE697
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: d5606d3ef150dd8af578d7f6829bb67ea7a47f41
+Expires: Sun, 15 Sep 2024 17:51:32 GMT
+Source-Age: 0
+
+]
+[2024-09-15 22:46:42,962: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-15 22:46:42,963: INFO: main: *******************]
+[2024-09-15 22:46:42,963: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-15 22:46:42,965: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:46:42,967: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:46:42,967: INFO: common: created directory at: artifacts]
+[2024-09-15 22:46:42,968: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-15 22:46:43,086: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-09-15 22:46:43,282: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-09-15 22:46:43,759: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-15 22:46:44,146: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-15 22:46:44,146: INFO: main: *******************]
+[2024-09-15 22:46:44,146: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-15 22:46:44,149: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:46:44,152: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:46:44,152: INFO: common: created directory at: artifacts]
+[2024-09-15 22:46:44,153: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:46:44,154: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:46:44,156: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:46:45,179: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2024-09-15 22:47:16,164: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-15 22:47:49,690: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 22:47:51,304: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:47:51,307: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:47:51,309: INFO: common: created directory at: artifacts]
+[2024-09-15 22:47:51,310: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:47:51,311: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:47:51,315: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:47:51,530: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-09-15 22:47:51,609: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-09-15 22:47:52,744: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2024-09-15 22:49:50,680: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 22:49:52,026: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 22:49:52,031: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 22:49:52,033: INFO: common: created directory at: artifacts]
+[2024-09-15 22:49:52,034: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 22:49:52,035: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 22:49:52,038: INFO: common: created directory at: artifacts\training]
+[2024-09-15 22:49:52,221: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-09-15 22:49:52,287: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-09-15 22:49:53,471: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
