@@ -410,3 +410,178 @@ x==========x]
 ]
 [2024-09-15 22:49:53,471: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
 ]
+[2024-09-15 23:01:04,159: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 23:01:04,164: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 23:01:04,166: INFO: common: created directory at: artifacts]
+[2024-09-15 23:01:05,091: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2024-09-15 23:01:15,070: INFO: common: json file saved at: scores.json]
+[2024-09-15 23:08:17,004: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-15 23:08:19,689: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-15 23:08:19,695: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 23:08:19,701: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 23:08:19,703: INFO: common: created directory at: artifacts]
+[2024-09-15 23:08:19,704: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-15 23:08:25,801: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: CCA1:0DCF:83650D:89DDC6:66E71D77
+Accept-Ranges: bytes
+Date: Sun, 15 Sep 2024 18:08:23 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-eddf8230134-FRA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1726423703.967394,VS0,VE133
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 4eda5ad6967d6d17c48ff5470190d3eb13ebe995
+Expires: Sun, 15 Sep 2024 18:13:23 GMT
+Source-Age: 0
+
+]
+[2024-09-15 23:08:26,051: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-15 23:08:26,051: INFO: main: *******************]
+[2024-09-15 23:08:26,052: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-15 23:08:26,054: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 23:08:26,056: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 23:08:26,056: INFO: common: created directory at: artifacts]
+[2024-09-15 23:08:26,057: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-15 23:08:26,172: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-09-15 23:08:26,273: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-09-15 23:08:26,781: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-15 23:08:28,752: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-15 23:08:28,753: INFO: main: *******************]
+[2024-09-15 23:08:28,754: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-09-15 23:08:28,761: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 23:08:28,763: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 23:08:28,764: INFO: common: created directory at: artifacts]
+[2024-09-15 23:08:28,765: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-15 23:08:28,767: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-15 23:08:28,770: INFO: common: created directory at: artifacts\training]
+[2024-09-15 23:08:29,707: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2024-09-15 23:11:20,194: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-15 23:11:20,195: INFO: main: *******************]
+[2024-09-15 23:11:20,195: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-15 23:11:20,200: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-15 23:11:20,206: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-15 23:11:20,209: INFO: common: created directory at: artifacts]
+[2024-09-15 23:11:30,061: INFO: common: json file saved at: scores.json]
+[2024-09-15 23:11:30,061: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-09-16 10:29:10,127: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-16 10:29:10,130: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-16 10:29:10,134: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-16 10:29:10,135: INFO: common: created directory at: artifacts]
+[2024-09-16 10:29:10,135: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-16 10:29:23,521: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3704:0DF2:401F63:43ED22:66E7C229
+Accept-Ranges: bytes
+Date: Mon, 16 Sep 2024 05:29:14 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-eddf8230125-FRA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1726464553.355019,VS0,VE717
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: cec37d2ea8858c9ae26c62309ce8c100d7c55fc4
+Expires: Mon, 16 Sep 2024 05:34:14 GMT
+Source-Age: 0
+
+]
+[2024-09-16 10:29:23,731: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-16 10:30:42,548: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-16 10:30:42,551: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-16 10:30:42,552: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-16 10:30:42,553: INFO: common: created directory at: artifacts]
+[2024-09-16 10:30:42,553: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-16 10:30:42,554: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2024-09-16 10:30:42,736: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-09-16 10:30:52,203: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-16 10:30:53,467: INFO: stage_02_prepare_base_model: *******************]
+[2024-09-16 10:30:53,467: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-09-16 10:30:53,469: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-16 10:30:53,471: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-16 10:30:53,471: INFO: common: created directory at: artifacts]
+[2024-09-16 10:30:53,472: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-16 10:30:53,604: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-09-16 10:30:53,798: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-09-16 10:30:54,332: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-16 10:30:57,201: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-09-16 10:31:04,530: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-16 10:31:05,539: INFO: stage_03_training: *******************]
+[2024-09-16 10:31:05,539: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-09-16 10:31:05,542: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-16 10:31:05,544: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-16 10:31:05,544: INFO: common: created directory at: artifacts]
+[2024-09-16 10:31:05,545: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-09-16 10:31:05,545: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-09-16 10:31:05,547: INFO: common: created directory at: artifacts\training]
+[2024-09-16 10:31:05,690: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-09-16 10:31:05,703: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-09-16 10:31:06,774: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2024-09-16 10:37:44,089: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-09-16 10:37:54,524: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-16 10:37:55,524: INFO: stage_04_evaluation: *******************]
+[2024-09-16 10:37:55,524: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-09-16 10:37:55,531: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-09-16 10:37:55,534: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-16 10:37:55,535: INFO: common: created directory at: artifacts]
+[2024-09-16 10:37:55,668: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-09-16 10:37:55,680: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-09-16 10:37:56,395: WARNING: module_wrapper: From C:\Users\user\anaconda3\envs\Chicken_Disease_Classification\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2024-09-16 10:38:05,391: INFO: common: json file saved at: scores.json]
+[2024-09-16 10:38:05,391: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
