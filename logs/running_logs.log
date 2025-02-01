@@ -775,3 +775,16 @@ config={'module': 'keras.losses', 'class_name': 'CategoricalCrossentropy', 'conf
 Exception encountered: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
 [2025-02-01 21:29:24,153: INFO: _internal: 127.0.0.1 - - [01/Feb/2025 21:29:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
 [2025-02-01 21:33:19,394: INFO: __init__: Logger initialized successfully.]
+[2025-02-01 21:33:22,746: INFO: utils: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2025-02-01 21:33:22,747: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-02-01 21:33:24,638: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000]
+[2025-02-01 21:33:24,639: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-01 21:33:25,654: INFO: _internal: 127.0.0.1 - - [01/Feb/2025 21:33:25] "GET / HTTP/1.1" 200 -]
+[2025-02-01 21:33:25,793: INFO: _internal: 127.0.0.1 - - [01/Feb/2025 21:33:25] "GET / HTTP/1.1" 200 -]
+[2025-02-01 21:33:25,936: INFO: _internal: 127.0.0.1 - - [01/Feb/2025 21:33:25] "GET / HTTP/1.1" 200 -]
+[2025-02-01 21:33:26,154: INFO: _internal: 127.0.0.1 - - [01/Feb/2025 21:33:26] "GET / HTTP/1.1" 200 -]
+[2025-02-01 21:33:33,597: INFO: _internal: 127.0.0.1 - - [01/Feb/2025 21:33:33] "POST /predict HTTP/1.1" 200 -]
+[2025-02-01 21:33:45,343: INFO: _internal: 127.0.0.1 - - [01/Feb/2025 21:33:45] "POST /predict HTTP/1.1" 200 -]
