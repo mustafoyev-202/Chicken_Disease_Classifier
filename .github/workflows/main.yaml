@@ -43,30 +43,4 @@ jobs:
           docker build -t $DOCKER_USERNAME/$IMAGE_NAME:latest .
           docker push $DOCKER_USERNAME/$IMAGE_NAME:latest
 
-  deploy-to-server:
-    name: Deploy to Server
-    needs: build-and-push-dockerhub
-    runs-on: ubuntu-latest
-    steps:
-      - name: SSH into Server and Deploy
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          script: |
-            echo "Logging in to Docker Hub..."
-            echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
-            echo "Pulling latest Docker image..."
-            docker pull ${{ secrets.DOCKER_USERNAME }}/myapp:latest
-
-            echo "Stopping and removing old container..."
-            docker stop myapp || true
-            docker rm myapp || true
-
-            echo "Starting new container..."
-            docker run -d --name myapp -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/myapp:latest
-
-            echo "Cleaning up old images..."
-            docker system prune -f
