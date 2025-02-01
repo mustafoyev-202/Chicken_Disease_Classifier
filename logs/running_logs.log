@@ -628,3 +628,150 @@ x==========x]
 [2024-09-20 21:57:00,025: INFO: _internal: 127.0.0.1 - - [20/Sep/2024 21:57:00] "POST /predict HTTP/1.1" 200 -]
 [2024-09-20 21:57:09,177: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000023610C15FC0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
 [2024-09-20 21:57:09,186: INFO: _internal: 127.0.0.1 - - [20/Sep/2024 21:57:09] "POST /predict HTTP/1.1" 200 -]
+[2025-02-01 21:24:13,698: INFO: __init__: Logger initialized successfully.]
+[2025-02-01 21:25:40,805: INFO: __init__: Logger initialized successfully.]
+[2025-02-01 21:25:45,967: INFO: utils: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2025-02-01 21:25:45,967: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-02-01 21:26:16,269: INFO: __init__: Logger initialized successfully.]
+[2025-02-01 21:26:19,262: INFO: utils: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2025-02-01 21:26:19,262: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-02-01 21:27:05,786: INFO: __init__: Logger initialized successfully.]
+[2025-02-01 21:27:09,493: INFO: utils: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2025-02-01 21:27:09,494: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-02-01 21:27:19,104: INFO: __init__: Logger initialized successfully.]
+[2025-02-01 21:27:22,023: INFO: utils: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2025-02-01 21:27:22,023: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-02-01 21:27:23,740: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000]
+[2025-02-01 21:27:23,741: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-01 21:27:29,609: INFO: _internal: 127.0.0.1 - - [01/Feb/2025 21:27:29] "GET / HTTP/1.1" 200 -]
+[2025-02-01 21:27:38,309: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\losses\losses.py", line 39, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+TypeError: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "D:\AI Projects\Chicken_Disease_Classification\app.py", line 38, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\ai projects\chicken_disease_classification\src\cnnClassifier\pipeline\predict.py", line 13, in predict
+    model = load_model(os.path.join("artifacts", "training", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\saving\saving_api.py", line 189, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 155, in load_model_from_hdf5
+    **saving_utils.compile_args_from_training_config(
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 143, in compile_args_from_training_config
+    loss = _deserialize_nested_config(losses.deserialize, loss_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 202, in _deserialize_nested_config
+    return deserialize_fn(config)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\losses\__init__.py", line 149, in deserialize
+    return serialization_lib.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\saving\serialization_lib.py", line 581, in deserialize_keras_object
+    return deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\saving\serialization_lib.py", line 720, in deserialize_keras_object
+    raise TypeError(
+TypeError: <class 'keras.src.losses.losses.CategoricalCrossentropy'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'keras.losses', 'class_name': 'CategoricalCrossentropy', 'config': {'reduction': 'auto', 'name': 'categorical_crossentropy', 'from_logits': False, 'label_smoothing': 0.0, 'axis': -1, 'fn': 'categorical_crossentropy'}, 'registered_name': None}.
+
+Exception encountered: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+[2025-02-01 21:27:38,338: INFO: _internal: 127.0.0.1 - - [01/Feb/2025 21:27:38] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-02-01 21:29:16,007: INFO: _internal: 127.0.0.1 - - [01/Feb/2025 21:29:16] "GET / HTTP/1.1" 200 -]
+[2025-02-01 21:29:24,151: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\losses\losses.py", line 39, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+TypeError: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "D:\AI Projects\Chicken_Disease_Classification\app.py", line 38, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\ai projects\chicken_disease_classification\src\cnnClassifier\pipeline\predict.py", line 13, in predict
+    model = load_model(os.path.join("artifacts", "training", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\saving\saving_api.py", line 189, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 155, in load_model_from_hdf5
+    **saving_utils.compile_args_from_training_config(
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 143, in compile_args_from_training_config
+    loss = _deserialize_nested_config(losses.deserialize, loss_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\legacy\saving\saving_utils.py", line 202, in _deserialize_nested_config
+    return deserialize_fn(config)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\losses\__init__.py", line 149, in deserialize
+    return serialization_lib.deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\saving\serialization_lib.py", line 581, in deserialize_keras_object
+    return deserialize_keras_object(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\anaconda3\Lib\site-packages\keras\src\saving\serialization_lib.py", line 720, in deserialize_keras_object
+    raise TypeError(
+TypeError: <class 'keras.src.losses.losses.CategoricalCrossentropy'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'keras.losses', 'class_name': 'CategoricalCrossentropy', 'config': {'reduction': 'auto', 'name': 'categorical_crossentropy', 'from_logits': False, 'label_smoothing': 0.0, 'axis': -1, 'fn': 'categorical_crossentropy'}, 'registered_name': None}.
+
+Exception encountered: CategoricalCrossentropy.__init__() got an unexpected keyword argument 'fn'
+[2025-02-01 21:29:24,153: INFO: _internal: 127.0.0.1 - - [01/Feb/2025 21:29:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-02-01 21:33:19,394: INFO: __init__: Logger initialized successfully.]
